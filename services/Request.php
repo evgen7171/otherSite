@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Service;
+namespace App\services;
 
 class Request
 {
@@ -12,7 +12,7 @@ class Request
 
     public function __construct()
     {
-        session_start();
+//        session_start();
         $this->requestString = $_SERVER['REQUEST_URI'];
         $this->parseRequest();
     }

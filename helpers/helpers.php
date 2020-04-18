@@ -1,7 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: UserUser
- * Date: 18.04.2020
- * Time: 21:01
- */
+
+if (!function_exists('asset')) {
+    function asset($path)
+    {
+        return 'public/' . $path;
+    }
+}
